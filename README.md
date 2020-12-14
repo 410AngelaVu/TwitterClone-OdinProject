@@ -13,10 +13,10 @@
 
 **First get at copy of the project by clicking on the green button on the top right corner**
 **On your local machine run this command `git@github.com:410AngelaVu/TwitterClone-OdinProject.git`**
-then type `cd TwitterClone` and that will get you inside the project. **
+**Then type `cd TwitterClone` and that will get you inside the project.**
 **Then run bundle install**
-** Run db:migrate **
-** To open in server, go to the browser and type localhost:3000 **
+**Run db:migrate**
+**To open in server, go to the browser and type localhost:3000**
 
 ### Prerequisites
 
