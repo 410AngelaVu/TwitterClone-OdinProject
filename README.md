@@ -1,24 +1,46 @@
 # README
+> In this project I have created Twitter Clone with Bootstrap. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![screenshot](./app_screenshot.png)
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Ruby on Rails
+- Bootstrap
 
-* System dependencies
+## Getting Started
 
-* Configuration
+**First get at copy of the project by clicking on the green button on the top right corner**
+**On your local machine run this command `git@github.com:410AngelaVu/TwitterClone-OdinProject.git`**
+then type `cd TwitterClone` and that will get you inside the project. **
+**Then run bundle install**
+** Run db:migrate **
+** To open in server, go to the browser and type localhost:3000 **
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- Need to have Ruby install
+- Rails
+- Use the Starter Template from Bootstrap
 
-* How to run the test suite
+### Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+- Sign Up to a new account and test the functionalities!
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Gia Vu**
+
+- GitHub: [https://github.com/410AngelaVu]
+- Twitter: [https://twitter.com/andjelavukadin7]
+- LinkedIn: [https://www.linkedin.com/in/andjela-vukadinovic-67a21b1b2/]
+
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/).
+- [The Odin Project](https://www.theodinproject.com/).
+
+## 📝 License
+
+This project is [MIT licensed](https://github.com/chubaquelo/re-former/blob/form/LICENSE).
