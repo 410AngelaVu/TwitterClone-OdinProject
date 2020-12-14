@@ -1,0 +1,7 @@
+<h3>
+	<%= @tweet.twit %>
+</h3>
+
+<%= link_to 'Back', tweets_path %>
+<%= link_to 'Edit', edit_tweet_path %>
+<%= link_to 'Delete', tweet_path(@tweet), method: :delete, data: { confirm: 'Are You Sure?' } %>

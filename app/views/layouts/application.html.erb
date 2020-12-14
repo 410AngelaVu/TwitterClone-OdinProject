@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterClone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<script src="https://kit.fontawesome.com/c7d73dbfbb.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      
+    
+
+     <!--  <#% flash.each do |type, msg| %>
+  <div class="alert alert-info alert-dismissible fade show" role="alert">
+    <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+    <#%= msg %>
+
+  </div>
+<#% end %> -->
+    <!--  <#% if notice %><br>
+     <%#= render 'layouts/alert' %>
+     <#% end %> -->
+    <%= yield %>
+  </div>
+  </body>
+</html>

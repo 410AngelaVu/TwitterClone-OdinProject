@@ -1,0 +1,20 @@
+<% if user_signed_in? %>
+<div class="card first-card" style="width: 15rem;">
+	<div class="btn-group open">
+  <button type="button"  class="dropup-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></button>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="icon-fixed-width icon-pencil"></i><h5><%= link_to current_user.name, edit_user_registration_path %> </h5></a></li>
+    <li><a href="#"><i class="icon-fixed-width icon-trash"></i> <%= link_to 'Log Out', destroy_user_session_path, method: :delete, data: { confirm: 'GoodBye!' }   %></a></li>
+  </ul>
+</div>
+
+
+  <div class="card-body">
+<h5 class="card-title"><%= current_user.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= current_user.username %></h6>
+  </div>
+
+</div>
+
+<% end %>
+

@@ -1,0 +1,78 @@
+<div class="row">
+	<div class="col-3 bm">
+	<div class="sticky-top">
+  <ul class="da">
+  	<li class="li"><i class="fab fa-twitter fa-2x"></i></li>
+    <li class="li"><i class="fas fa-home">&nbsp&nbsp</i><strong>Home</strong></li>
+    <li class="li"><i class="fas fa-hashtag">&nbsp&nbsp</i><strong>Explore</strong></li>
+    <li class="li"><i class="far fa-bell">&nbsp&nbsp</i><strong>Notification</strong></li>
+    <li class="li"><i class="far fa-envelope">&nbsp&nbsp</i><strong>Messages</strong></li>
+    <li class="li"><i class="far fa-bookmark">&nbsp&nbsp</i><strong>Bookmarks</strong></li>
+    <li class="li"><i class="far fa-list-alt">&nbsp&nbsp</i><strong>Lists</strong></li>
+    <li class="li"><i class="far fa-user">&nbsp&nbsp</i><strong>Lists</strong></li>
+    <li class="li"><i class="fas fa-chevron-circle-down">&nbsp&nbsp</i><strong>Lists</strong></li>
+    <%= link_to 'New Tweet', new_tweet_path, class:'la btn d-grid gap-2 d-md-block' %>
+  </ul>
+  <%= render 'tweets/card' %>
+</div>
+	</div>
+	<div class="col-6">
+    <% if user_signed_in? %>
+		<div class="card" style="width: 90%;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item sticky-top"><strong>Home<i class="fas fa-asterisk"></i></strong></li>
+    <li class="list-group-item">
+    <%= simple_form_for(@tweet) do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :twit, input_html: { class: 'textarea' }, wrapper: false, placeholder: "What's happening?", class:'first-input' %>
+      <%= f.submit 'Tweet', class:'home-button btn' %>
+    <% end %>
+    
+    <i class="far fa-image fa-lg"></i>
+    <i class="far fa-heart fa-lg"></i>
+    <i class="far fa-smile fa-lg"></i>
+ 
+  </li>
+    </ul>
+</div>
+<% end %>
+<% @tweets.each do |t| %>
+<br>
+<div class="card" style="width: 487px;">
+  <div class="card-body">
+    <h4 class="card-title"><strong><%= t.user.name %></strong></h4>
+    <h6 class="card-subtitle mb-2 text-muted"><%= t.user.username %></h6>
+    <p class="card-text"> <%= link_to t.twit, t %></p>
+    <% if user_signed_in? %>
+    <a href="#" class="card-link"><i class="far fa-comment">&nbsp&nbsp</i></a>
+    <a href="#" class="card-link"><i class="fas fa-retweet">&nbsp&nbsp</i></a>
+     <a href="#" class="card-link"><i class="far fa-heart">&nbsp&nbsp</i></a>
+     <a href="#" class="card-link"><i class="fas fa-angle-double-right">&nbsp&nbsp</i></a>
+     <% end %>
+  </div>
+</div>
+<% end %>
+	</div>
+	<div class="col-3 br">
+    <div class="sticky-top">
+		<%= render 'tweets/who-to-follow' %>
+  </div>
+	</div>
+</div>
+  <% if user_signed_in? %>
+<%= link_to current_user.name, edit_user_registration_path, class:'btn btn-info' %><br>
+<%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:'btn btn-info' %><br>
+<% else %>
+<%= link_to 'Sign Up', new_user_registration_path, class:'btn btn-info lst-1' %><br>
+<%= link_to 'Sign In', new_user_session_path, class:'btn btn-info lst' %><br>
+  <% end %>
+
+<!--   <div class="card first-card" style="width: 18rem;">
+   
+  <div class="card-body">
+<h5 class="card-title"><%#= current_user. %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%#= current_user.username %></h6>
+
+  </div>
+</div> -->
+
