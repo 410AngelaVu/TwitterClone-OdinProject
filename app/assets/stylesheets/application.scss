@@ -1,0 +1,121 @@
+@import "bootstrap/scss/bootstrap";
+.row {
+	margin-top: 10px;
+}
+.fa-twitter {
+	color: #1DA1F2;
+    margin-left: -40px;
+	
+}
+
+.da {
+	margin-top:20px;
+}
+
+.li {
+	list-style-type: none;
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.la {
+	width:200px;
+	border-radius:9999px;
+	padding-top: 10px;
+	height: 49px;
+	margin-top: 30px;
+	background-color: #1A91DA;
+	color: white;
+	margin-left: -49px;
+}
+
+.form-control {
+	height: 100px;
+}
+
+.card-link {
+	padding-left: 55px;
+}
+
+.f1 {
+	border-radius:9999px;
+	width: 255px;
+	height: 50px;
+	background-color: #EBEEF0;
+	margin-top: 20px;
+}
+
+.first-input {
+	border:none;
+}
+
+.home-button {
+	border-radius:9999px;
+	float: right;
+	width: 85px;
+	background-color: #1A91DA;
+	color: white;
+	margin-top: 15px;
+}
+
+.fa-image, .fa-heart, .fa-smile {
+	color: #1A91DA;
+	width: 50px;
+	margin-top: 20px;
+	margin-left: 3px;
+	}
+
+	.fa-asterisk {
+	float: right;
+		color: #1A91DA;
+	}
+
+.bot {
+	margin-bottom: -5px;
+}
+
+.first-card {
+	position: fixed;
+	bottom: 0;
+	margin-left: -9px;
+	    height: 112px;
+	    border:none;
+}
+
+.fa-comment,
+.fa-retweet,
+.fa-heart,
+.fa-angle-double-right {
+	color: #5B7083;
+}
+
+.dropup-toggle {
+	position: absolute;
+	right: 0;
+	border:none;
+}
+
+.bm {
+	position: sticky;
+}
+
+.br {
+	position: sticky;
+}
+
+.fa-home, .fa-hashtag, .fa-bell, .fa-envelope, .fa-bookmark, .fa-list-alt, .fa-user, .fa-chevron-circle-down {
+	margin-left: -40px;
+	padding-top: 10px;
+}
+
+.lst {
+	position: fixed;
+    bottom: 10%;
+    margin-left: -31px;
+}
+
+.lst-1 {
+	position: fixed;
+    bottom: 10%;
+    margin-left: 85px;
+}
