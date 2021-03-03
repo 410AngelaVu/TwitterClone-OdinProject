@@ -60,8 +60,8 @@
 	</div>
 </div>
   <% if user_signed_in? %>
-<%= link_to current_user.name, edit_user_registration_path, class:'btn btn-info' %><br>
-<%= link_to 'Log Out', destroy_user_session_path, method: :delete, class:'btn btn-info' %><br>
+<% link_to current_user.name, edit_user_registration_path, class:'btn btn-info' %><br>
+<% link_to 'Log Out', destroy_user_session_path, method: :delete, class:'btn btn-info' %><br>
 <% else %>
 <%= link_to 'Sign Up', new_user_registration_path, class:'btn btn-info lst-1' %><br>
 <%= link_to 'Sign In', new_user_session_path, class:'btn btn-info lst' %><br>
